@@ -33,6 +33,14 @@ if ! [ -d "$(pwd)/$projectDir" ]; then
     echo $templateCode > main.go
     echo "$blue>> Success created Go project with name \"$projectDir\"!$white"
     
+    echo -n "$green>> Want to create Repository in github? (y/n) : "
+    read createGithubRepo
+    
+    if [ "$createGithubRepo" == "y" ] || [ "$createGithubRepo" == "Y" ]; then
+        gh repo create
+    fi
+    
+    
     echo -n "$green>> Want to open with vs code? (y/n) : "
     read openCode
     
