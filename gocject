@@ -23,7 +23,7 @@ if ! [ -d "$(pwd)/$projectDir" ]; then
     cd "$projectDir";
     go mod init github.com/$githubUsername/$projectDir
     
-    mkdir -pv "entities" "repositories" "services" "controllers" "helpers" "routers"
+    mkdir -pv "entities" "repositories" "services" "controllers" "helpers" "routers" "database"
     
     templateCode="package main;
     
