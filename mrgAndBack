@@ -1,0 +1,4 @@
+#!/bin/sh
+git checkout "$1"
+git merge --no-ff "$2"
+git checkout "$2"

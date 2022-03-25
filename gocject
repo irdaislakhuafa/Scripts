@@ -1,0 +1,49 @@
+#!/bin/bash
+
+projectDir="$1"
+githubUsername="$2"
+
+yellow="[33m";
+blue="[34m";
+green="[32m";
+white="[37m"
+
+if [ "$projectDir" == "" ]; then
+    echo -n "Name of project : ";
+    read projectDir;
+fi
+
+if [ "$githubUsername" == "" ]; then
+    echo -n "Github username : ";
+    read githubUsername;
+fi
+
+if ! [ -d "$(pwd)/$projectDir" ]; then
+    mkdir -pv "$projectDir"
+    cd "$projectDir";
+    go mod init github.com/$githubUsername/$projectDir
+    
+    mkdir -pv "entities" "repositories" "services" "controllers" "helpers" "routers"
+    
+    templateCode="package main;
+    
+    func main(){
+        
+    }"
+    echo $templateCode > main.go
+    echo "$blue>> Success created Go project with name \"$projectDir\"!$white"
+    
+    echo -n "$green>> Want to open with vs code? (y/n) : "
+    read openCode
+    
+    if [ "$openCode" == "y" ] || [ "$openCode" == "Y" ]; then
+        code .
+    fi
+    
+    exit 0
+else
+    echo "$yellow>> Project dir \"$projectDir\" already exists!$white"
+    exit 1
+fi
+
+
