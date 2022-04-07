@@ -1,0 +1,1 @@
+alias eacc='nvim /media/My_Drive/Kelas\ Terbuka/Account.Me'
