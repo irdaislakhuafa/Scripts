@@ -1,0 +1,1 @@
+alias cpr='rsync -avh --progress'
