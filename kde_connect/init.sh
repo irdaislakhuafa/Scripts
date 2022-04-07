@@ -1,0 +1,1 @@
+alias kcli="kdeconnect-cli"
