@@ -1,0 +1,1 @@
+alias dmesg='doas dmesg'
