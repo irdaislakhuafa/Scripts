@@ -1,0 +1,1 @@
+alias github-token='cat /media/My_Drive/Kelas\ Terbuka/Account.Me | grep _ '
