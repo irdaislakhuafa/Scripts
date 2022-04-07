@@ -1,0 +1,1 @@
+alias pdfpng='pdftoppm -png'
