@@ -1,0 +1,1 @@
+alias efunctions='edit /lib/rc/functions'
