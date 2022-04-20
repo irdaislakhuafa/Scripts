@@ -1,4 +1,4 @@
-alias webcam='mpv /dev/video1 \
+alias webcam='mpv /dev/video0 \
 --no-cache \
 --no-demuxer-thread \
 --video-sync=audio \
