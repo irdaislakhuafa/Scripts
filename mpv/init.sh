@@ -15,3 +15,6 @@ alias webcam='mpv /dev/video0 \
 --opengl-swapinterval=0 \
 --no-correct-pts '
 alias wcam='webcam'
+alias npv="prime-run mpv"
+alias nvpv='mpv --no-vid'
+alias npvsp="npv --save-position-on-quit"
