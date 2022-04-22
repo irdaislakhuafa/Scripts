@@ -17,3 +17,4 @@ alias gdif='git diff'
 alias gbra='gbr -a'
 alias gamit='gadd . && gmit'
 alias glone="git clone"
+alias gst='git status'
