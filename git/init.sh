@@ -16,3 +16,4 @@ alias gam='git add . && gmit -am'
 alias gdif='git diff'
 alias gbra='gbr -a'
 alias gamit='gadd . && gmit'
+alias glone="git clone"
