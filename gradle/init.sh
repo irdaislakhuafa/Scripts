@@ -1,0 +1,1 @@
+alias gsrun="gradle bootRun"
