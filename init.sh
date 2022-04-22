@@ -2,104 +2,106 @@
 MY_HOME="/home/artix"
 MY_SCRIPTS="$MY_HOME/Scripts"
 
-# aria2c
-source "$MY_SCRIPTS/aria2c/init.sh"
+source $MY_SCRIPTS/*/*
 
-# ip
-source "$MY_SCRIPTS/ip/init.sh"
+# # aria2c
+# source "$MY_SCRIPTS/aria2c/init.sh"
 
-# runit
-source "$MY_SCRIPTS/runit/init.sh"
+# # ip
+# source "$MY_SCRIPTS/ip/init.sh"
 
-# mpv
-source "$MY_SCRIPTS/mpv/init.sh"
+# # runit
+# source "$MY_SCRIPTS/runit/init.sh"
 
-# colors
-source "$MY_SCRIPTS/colors/init.sh"
+# # mpv
+# source "$MY_SCRIPTS/mpv/init.sh"
 
-# ranger
-source "$MY_SCRIPTS/ranger/init.sh"
+# # colors
+# source "$MY_SCRIPTS/colors/init.sh"
 
-# chroot
-source "$MY_SCRIPTS/chroot/init.sh"
+# # ranger
+# source "$MY_SCRIPTS/ranger/init.sh"
 
-# nvim
-source "$MY_SCRIPTS/nvim/init.sh"
+# # chroot
+# source "$MY_SCRIPTS/chroot/init.sh"
 
-# git
-source "$MY_SCRIPTS/git/init.sh"
+# # nvim
+# source "$MY_SCRIPTS/nvim/init.sh"
 
-# electron without gpu
-source "$MY_SCRIPTS/electron/init.sh"
+# # git
+# source "$MY_SCRIPTS/git/init.sh"
 
-# postgresql
-source "$MY_SCRIPTS/lapp/init.sh"
+# # electron without gpu
+# source "$MY_SCRIPTS/electron/init.sh"
 
-# lampp
-source "$MY_SCRIPTS/lampp/init.sh"
+# # postgresql
+# source "$MY_SCRIPTS/lapp/init.sh"
 
-# app image
-source "$MY_SCRIPTS/app_image/init.sh"
+# # lampp
+# source "$MY_SCRIPTS/lampp/init.sh"
 
-# terminal
-source "$MY_SCRIPTS/terminal/init.sh"
+# # app image
+# source "$MY_SCRIPTS/app_image/init.sh"
 
-# setcharge
-source "$MY_SCRIPTS/setcharge/init.sh"
+# # terminal
+# source "$MY_SCRIPTS/terminal/init.sh"
 
-# github
-source "$MY_SCRIPTS/github/init.sh"
+# # setcharge
+# source "$MY_SCRIPTS/setcharge/init.sh"
 
-# maven
-source "$MY_SCRIPTS/maven/init.sh"
+# # github
+# source "$MY_SCRIPTS/github/init.sh"
 
-# winbox
-source "$MY_SCRIPTS/winbox/init.sh"
+# # maven
+# source "$MY_SCRIPTS/maven/init.sh"
 
-# ls
-source "$MY_SCRIPTS/lsd/init.sh"
+# # winbox
+# source "$MY_SCRIPTS/winbox/init.sh"
 
-# kde connect
-source "$MY_SCRIPTS/kde_connect/init.sh"
+# # ls
+# source "$MY_SCRIPTS/lsd/init.sh"
 
-# adb
-source "$MY_SCRIPTS/adb/init.sh"
+# # kde connect
+# source "$MY_SCRIPTS/kde_connect/init.sh"
 
-# onlyoffice
-source "$MY_SCRIPTS/onlyoffice/init.sh"
+# # adb
+# source "$MY_SCRIPTS/adb/init.sh"
 
-# dmesg
-source "$MY_SCRIPTS/dmesg/init.sh"
+# # onlyoffice
+# source "$MY_SCRIPTS/onlyoffice/init.sh"
 
-# fsck
-source "$MY_SCRIPTS/fsck/init.sh"
+# # dmesg
+# source "$MY_SCRIPTS/dmesg/init.sh"
 
-# poppler
-source "$MY_SCRIPTS/poppler/init.sh"
+# # fsck
+# source "$MY_SCRIPTS/fsck/init.sh"
 
-# java home
-source "$MY_SCRIPTS/java/init.sh"
+# # poppler
+# source "$MY_SCRIPTS/poppler/init.sh"
 
-# sleep
-source "$MY_SCRIPTS/sleep/init.sh"
+# # java home
+# source "$MY_SCRIPTS/java/init.sh"
 
-# mongodb
-source "$MY_SCRIPTS/mongodb/init.sh"
+# # sleep
+# source "$MY_SCRIPTS/sleep/init.sh"
 
-# cp file with progress
-source "$MY_SCRIPTS/rsync/init.sh"
+# # mongodb
+# source "$MY_SCRIPTS/mongodb/init.sh"
 
-# alterra academy
-source "$MY_SCRIPTS/alterra/init.sh"
+# # cp file with progress
+# source "$MY_SCRIPTS/rsync/init.sh"
 
-# maim ss
-source "$MY_SCRIPTS/maim/init.sh"
+# # alterra academy
+# source "$MY_SCRIPTS/alterra/init.sh"
 
-# my custom scripts
-export PATH=$MY_SCRIPTS/:$PATH
+# # maim ss
+# source "$MY_SCRIPTS/maim/init.sh"
 
-# go / golang
-source "$MY_SCRIPTS/go/init.sh"
+# # my custom scripts
+# export PATH=$MY_SCRIPTS/:$PATH
 
-# docker custom command
-source "$MY_SCRIPTS/docker/init.sh"
+# # go / golang
+# source "$MY_SCRIPTS/go/init.sh"
+
+# # docker custom command
+# source "$MY_SCRIPTS/docker/init.sh"
