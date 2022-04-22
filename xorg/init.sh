@@ -1,0 +1,1 @@
+alias exinitrc='nvim ~/.xinitrc'
