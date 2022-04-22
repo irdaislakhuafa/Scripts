@@ -3,3 +3,7 @@ alias etri='nvim ~/.config/trizen/trizen.conf'
 
 # edit pacman config
 alias epac='edit /etc/pacman.conf'
+
+# set default editor
+export VISUAL=nvim;
+export EDITOR=nvim;
