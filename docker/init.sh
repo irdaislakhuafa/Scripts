@@ -15,3 +15,5 @@ alias dologs='docker logs'
 alias donls='docker network ls'
 alias donconn='docker network connect'
 alias donins='docker network inspect'
+
+alias doclean='docker volume prune && docker network prune && docker builder prune &&  docker container prune && docker image prune'
