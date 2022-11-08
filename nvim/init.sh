@@ -7,3 +7,4 @@ alias epac='edit /etc/pacman.conf'
 # set default editor
 export VISUAL=nvim;
 export EDITOR=nvim;
+alias ide=vim

@@ -1,4 +1,4 @@
-getDevice="$(iwctl device list | grep station | awk '{print$1}')"
+getDevice="$(iwctl device list | grep station | awk '{print$2}')"
 alias wscan='iwctl station $getDevice scan'
 alias dlist='iwctl device list'
 alias wlist='wscan && iwctl station $getDevice get-networks'
