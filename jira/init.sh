@@ -1,0 +1,1 @@
+export JIRA_API_TOKEN="0DaTvX5olAyhOUS79wQr76B9"

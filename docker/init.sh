@@ -21,3 +21,5 @@ alias docom='docker compose'
 alias dorunit="docker run -it  -v \"/tmp:/tmp\" -e DISPLAY=$DISPLAY -v \"/dev:/dev\" -v \"/run/user/1000/pulse/native:/run/user/1000/pulse/native\" -e PULSE_SERVER=unix:/run/user/1000/pulse/native"
 alias dorunitd="docker run -d  -v \"/tmp:/tmp\" -e DISPLAY=$DISPLAY -v \"/dev:/dev\" -v \"/run/user/1000/pulse/native:/run/user/1000/pulse/native\" -e PULSE_SERVER=unix:/run/user/1000/pulse/native"
 alias dorunitu="dorunit -u 1000:1000"
+alias dorunitf='dorunit -v "$(pwd):/files"'
+alias dorunitdf='dorunitd -v "$(pwd):/files"'
