@@ -18,8 +18,8 @@ alias donconn='docker network connect'
 alias donins='docker network inspect'
 alias doclean='docker volume prune && docker network prune && docker builder prune &&  docker container prune && docker image prune'
 alias docom='docker compose'
-alias dorunit="docker run -it  -v \"/tmp:/tmp\" -e DISPLAY=$DISPLAY -v \"/dev:/dev\" -v \"/run/user/1000/pulse/native:/run/user/1000/pulse/native\" -e PULSE_SERVER=unix:/run/user/1000/pulse/native"
-alias dorunitd="docker run -d  -v \"/tmp:/tmp\" -e DISPLAY=$DISPLAY -v \"/dev:/dev\" -v \"/run/user/1000/pulse/native:/run/user/1000/pulse/native\" -e PULSE_SERVER=unix:/run/user/1000/pulse/native"
+alias dorunit="docker run -it  -v \"/tmp:/tmp\" -e DISPLAY=$DISPLAY -v \"/dev:/dev\" -v \"/run/user/1000/:/run/user/1000/\" -e PULSE_SERVER=unix:/run/user/1000/pulse/native"
+alias dorunitd="dorunit -d"
 alias dorunitu="dorunit -u 1000:1000"
 alias dorunitf='dorunit -v "$(pwd):/files"'
 alias dorunitdf='dorunitd -v "$(pwd):/files"'

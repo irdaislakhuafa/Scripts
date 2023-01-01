@@ -5,3 +5,4 @@ alias gogen='gqlgen generate'
 alias gen="go get github.com/99designs/gqlgen$GQLGEN && go run github.com/99designs/gqlgen$GQLGEN generate"
 alias grun='go run'
 alias ggen="go run github.com/99designs/gqlgen$GQLGEN"
+export PATH="/home/artix/go/bin:$PATH"
