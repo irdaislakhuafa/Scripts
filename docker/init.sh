@@ -1,4 +1,4 @@
-alias docker='doas docker'
+alias docker='docker'
 alias dops='docker ps'
 alias dopsa='dops --all'
 alias dostart='docker start'
