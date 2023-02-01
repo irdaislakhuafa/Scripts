@@ -4,6 +4,7 @@ alias grph='git log \
 --oneline \
 --graph'
 
+alias grphp='grph --pretty'
 alias gadd='git add'
 alias gout='git checkout'
 alias gmit='git commit'
@@ -24,3 +25,8 @@ alias gfap='git fetch --all --prune'
 alias gpl='git pull'
 alias gsdrop='git stash && git stash drop stash@\{0\}'
 alias gprsc='gh pr status -c'
+alias gouts='gout $(gbr | fzf)'
+alias gbrd='gbr -D $(gbr | fzf)'
+alias ghprb='gh pr create -B $(gbr | fzf)'
+alias gpsur='gps -u $(git remote | fzf)'
+alias ghprout='gh pr checkout $(gh pr list | fzf | awk \'{print $1}\')'
