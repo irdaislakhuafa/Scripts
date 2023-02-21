@@ -7,4 +7,12 @@ alias epac='edit /etc/pacman.conf'
 # set default editor
 export VISUAL=nvim;
 export EDITOR=nvim;
-alias ide=vim
+alias ide=$EDITOR
+
+# anekapay projects
+anekapay() {
+	PROJECTS_DIR="/media/Projects/Anekapay/Repository"
+	project=$(ls "$PROJECTS_DIR" | fzf --reverse)
+
+	cd "$PROJECTS_DIR/$project" && nvim
+}
