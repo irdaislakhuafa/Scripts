@@ -1,2 +1,8 @@
 alias day='curl wttr.in/id'
-alias tf='curl --progress-bar --upload-file "$1" "https://transfer.sh/$1"'
+
+tf() {
+	file="$1"
+	curl --progress-bar \
+		--upload-file "$file" \
+		--url "https://transfer.sh/$file"
+}
