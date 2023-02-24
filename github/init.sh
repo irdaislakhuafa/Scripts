@@ -18,3 +18,5 @@ ghprx() {
 alias ghprout='ghprx gh pr checkout'
 alias ghprlose='ghprx gh pr close'
 alias ghprdit='ghprx gh pr edit'
+alias ghprv='ghprx gh pr view'
+alias ghprm='ghprx gh pr merge'
