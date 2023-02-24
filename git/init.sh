@@ -33,6 +33,15 @@ gsply() {
 		git stash apply $selected
 	fi
 }
+gsdropp(){
+	selected="$(gslect)"
+
+	if [ "$selected" = "" ]; then
+		echo "Nothing do"
+	else
+		git stash drop $selected
+	fi
+}
 
 alias gprsc='gh pr status -c'
 alias gouts='gout $(gbr | fzf)'
