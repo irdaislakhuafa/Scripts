@@ -23,3 +23,42 @@ alias dorunitd="dorunit -d"
 alias dorunitu="dorunit -u 1000:1000"
 alias dorunitf='dorunit -v "$(pwd):/files"'
 alias dorunitdf='dorunitd -v "$(pwd):/files"'
+
+dopslect() {
+	selected="$(docker ps | fzf --reverse -m 1000 | awk '{print $1}')"
+	echo $selected
+}
+
+dopsalect() {
+	selected="$(docker ps -a | fzf --reverse -m 1000 | awk '{print $1}')"
+	echo $selected
+}
+
+dopsx() {
+	selected="$(dopslect)"
+
+	if [ "$selected" = "" ]; then
+		echo "Nothing do";
+	else
+		selected=( $(echo $selected) )
+		for i in $selected; do
+			$@ $i
+		done
+	fi
+}
+
+dopsax() {
+	selected="$(dopsalect)"
+
+	if [ "$selected" = "" ]; then
+		echo "Nothing do";
+	else
+		selected=( $(echo $selected) )
+		for i in $selected; do
+			$@ $i
+		done
+	fi
+}
+
+alias dostopop='dopsx docker container stop'
+alias dostartop='dopsax docker container start'
