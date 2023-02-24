@@ -7,3 +7,13 @@ alias asu='anu $(ans $1)'
 alias anpush='adb push'
 alias anpull='adb pull'
 alias anshell='adb shell'
+
+anuopt() {
+	listApks="$(ans "" | fzf --reverse -m 1000)"
+	
+	array=( $(echo "$listApks") )
+
+	for i in $array; do
+		echo -n "Deleting $i : $(anu $i) \n";
+	done
+}
