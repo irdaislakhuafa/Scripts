@@ -31,3 +31,10 @@ alias ghprv='ghprx gh pr view'
 alias ghprm='ghprx gh pr merge'
 alias ghprvm='ghprmx gh pr view'
 alias ghprvmw='ghprmx gh pr view --web'
+
+ghrplect() {
+	selected="$(gh repo list --limit 1000 | fzf --reverse | awk '{print $1}')"
+	echo "$selected"
+}
+
+alias ghrpclone='gh repo clone $(ghrplect)'
