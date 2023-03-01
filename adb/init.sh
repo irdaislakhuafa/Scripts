@@ -14,6 +14,7 @@ anuopt() {
 	array=( $(echo "$listApks") )
 
 	for i in $array; do
-		echo -n "Deleting $i : $(anu $i) \n";
+		echo -n "Deleting $i... ";
+		echo "$(anu $i)"
 	done
 }
