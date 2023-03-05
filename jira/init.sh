@@ -23,3 +23,4 @@ jrissx() {
 
 alias jrissmv='jrissx jira issue move'
 alias jrissls='jira issue list -p $(jrprolist) -a $JIRA_ME '
+alias jrissv='jrissx jira issue view'
