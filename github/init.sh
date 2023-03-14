@@ -2,6 +2,7 @@ alias github-token='cat /media/My_Drive/Kelas\ Terbuka/Account.Me | grep _ '
 alias gprchecks='gh pr checks --watch $1'
 
 ghprlect(){
+	FZF_DEFAULT_OPTS=''
 	selected="$(gh pr list $@ | fzf --reverse | awk '{print $1}')"
 	echo $selected
 }
@@ -33,6 +34,7 @@ alias ghprvm='ghprmx gh pr view'
 alias ghprvmw='ghprmx gh pr view --web'
 
 ghrplect() {
+	FZF_DEFAULT_OPTS=''
 	selected="$(gh repo list --limit 1000 | fzf --reverse | awk '{print $1}')"
 	echo "$selected"
 }

@@ -2,13 +2,15 @@ export JIRA_API_TOKEN="0DaTvX5olAyhOUS79wQr76B9"
 export JIRA_ME="$(jira me)"
 
 jrprolist() {
+	FZF_DEFAULT_OPTS=''
 	project="$(jira project list | fzf --reverse | awk '{print $1}')"
 	echo $project
 }
 
 jrisslist() {
+	FZF_DEFAULT_OPTS=''
 	project="$(jrprolist)"
-	issue="$(jira issue list -p $project  -a $JIRA_ME --plain --columns KEY,TYPE,SUMMARY,PRIORITY,STATUS,ASSIGNEE,REPORTER,RESOLUTION,CREATED,UPDATED | fzf --reverse | awk '{print $1}')"
+	issue="$(jira issue list -p $project  -a $JIRA_ME --plain --columns KEY,TYPE,SUMMARY,PRIORITY,STATUS,ASSIGNEE,REPORTER,RESOLUTION,CREATED,UPDATED |  fzf --reverse | awk '{print $1}')"
 	echo $issue
 }
 
