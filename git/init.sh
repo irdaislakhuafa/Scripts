@@ -24,7 +24,7 @@ alias gmed='git commit --amend'
 alias gfap='git fetch --all --prune'
 alias gpl='git pull'
 alias gsdrop='git stash && git stash drop stash@\{0\}'
-alias gslect='git stash list | FZF_DEFAULT_OPTS='' fzf --reverse | cut -d ":" -f 1'
+alias gslect='git stash list | fzf --reverse | cut -d ":" -f 1'
 gsply() {
 	selected="$(gslect)"
 	if [ "$selected" = "" ]; then
