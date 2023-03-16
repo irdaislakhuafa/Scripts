@@ -5,7 +5,7 @@ FZF_DEFAULT_OPTS_NVIM='--preview "bat --style=numbers --color=always --line-rang
 
 # edit pacman config
 alias epac='edit /etc/pacman.conf'
-alias nvim='FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS_NVIM nvim'
+#alias nvim='FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS_NVIM nvim'
 
 # set default editor
 export VISUAL=nvim;
@@ -16,7 +16,7 @@ alias ide=$EDITOR
 # anekapay projects
 anekapay() {
 	PROJECTS_DIR="/media/Projects/Anekapay/Repository"
-	project=$(ls "$PROJECTS_DIR" | FZF_DEFAULT_OPTS='' fzf --reverse)
+	project=$(ls "$PROJECTS_DIR" | fzf --reverse)
 
 	cd "$PROJECTS_DIR/$project" && nvim
 }
