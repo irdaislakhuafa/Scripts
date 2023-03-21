@@ -18,3 +18,8 @@ gqlgenv() {
 
 alias grun='go run'
 alias gqlgen='go run $(gqlgenv)'
+
+gonit() {
+	dir_name="$(basename $(pwd))"
+	go mod init $GOME/$dir_name
+}
