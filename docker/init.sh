@@ -42,7 +42,7 @@ dopsx() {
 	else
 		selected=( $(echo $selected) )
 		for i in $selected; do
-			$@ $i
+			$@ $i &!
 		done
 	fi
 }
@@ -55,10 +55,11 @@ dopsax() {
 	else
 		selected=( $(echo $selected) )
 		for i in $selected; do
-			$@ $i
+			$@ $i &!
 		done
 	fi
 }
 
 alias dostopop='dopsx docker container stop'
 alias dostartop='dopsax docker container start'
+alias dormop='dopsax docker container rm'
