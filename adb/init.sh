@@ -8,11 +8,16 @@ alias anpush='adb push'
 alias anpull='adb pull'
 alias anshell='adb shell'
 
-anuop() {
+adb_app_select() {
 	listApks="$(ans "" | fzf --reverse -m 1000)"
+	echo "$listApks"
+}
 
+anuop() {
+	listApks=$(adb_app_select)
 	if [ "$listApks" = "" ]; then
 		echo "Nothing do"
+		return 0
 	fi
 	
 	array=( $(echo "$listApks") )
