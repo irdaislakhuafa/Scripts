@@ -63,3 +63,9 @@ dopsax() {
 alias dostopop='dopsx docker container stop'
 alias dostartop='dopsax docker container start'
 alias dormop='dopsax docker container rm'
+
+docker_image_select() {
+	selected="$(docker images | fzf -m 1000)"
+	echo $selected
+}
+
