@@ -1,4 +1,4 @@
-export IS_NVIDIA=true
+export IS_NVIDIA=false
 if [ "$(tty)" = "/dev/tty1" ]; then
 	if [ $IS_NVIDIA ]; then
 		prime-run Hyprland
@@ -13,6 +13,6 @@ usenvidia() {
 		echo "No parameter provided (true/false)"
 		return
 	else
-		sed s/'IS_NVIDIA=true'/'IS_NVIDIA=false'/g -i $MY_SCRIPTS/hyprland/init.sh
+		sed s/'IS_NVIDIA=false'/'IS_NVIDIA=false'/g -i $MY_SCRIPTS/hyprland/init.sh
 	fi
 }
