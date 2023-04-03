@@ -25,12 +25,12 @@ alias dorunitf='dorunit -v "$(pwd):/files"'
 alias dorunitdf='dorunitd -v "$(pwd):/files"'
 
 dopslect() {
-	selected="$(docker ps | FZF_DEFAULT_OPTS='' fzf --reverse -m 1000 | awk '{print $1}')"
+	selected="$(docker ps |  fzf  -m 1000 | awk '{print $1}')"
 	echo $selected
 }
 
 dopsalect() {
-	selected="$(docker ps -a | FZF_DEFAULT_OPTS='' fzf --reverse -m 1000 | awk '{print $1}')"
+	selected="$(docker ps -a |  fzf  -m 1000 | awk '{print $1}')"
 	echo $selected
 }
 
