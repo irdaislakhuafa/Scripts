@@ -1,4 +1,4 @@
 # simple to remove file
-alias srm='doas rm'
-alias srmr='doas rm -r'
-alias srmrf='doas rm -rf'
+alias srm='$ACCESS rm'
+alias srmr='$ACCESS rm -r'
+alias srmrf='$ACCESS rm -rf'

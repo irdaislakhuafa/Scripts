@@ -1,6 +1,6 @@
 LIMIT_BATTERY_PATH='/sys/class/power_supply/BAT0/charge_control_end_threshold'
-#alias setcharge='doas setcharge'
-alias cpuset='doas cpupower frequency-set --max'
+#alias setcharge='$ACCESS setcharge'
+alias cpuset='$ACCESS cpupower frequency-set --max'
 setcharge() {
 	value="$1"
 	if [ "$value" = "limit" ]; then

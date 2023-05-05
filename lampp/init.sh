@@ -4,4 +4,4 @@ export PATH=/opt/lampp:$PATH
 alias lampp='doas lampp'
 alias lstart='doas lampp start'
 alias lstop='doas lampp stop'
-alias lstatus='doas lampp status'
+alias lstatus='$ACCESS lampp status'

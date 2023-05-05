@@ -1,1 +1,1 @@
-alias piconf="doas nvim /etc/xdg/picom.conf"
+alias piconf="$ACCESS nvim /etc/xdg/picom.conf"

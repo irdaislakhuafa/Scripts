@@ -12,7 +12,7 @@ export VISUAL=nvim;
 export EDITOR=nvim;
 
 alias ide=$EDITOR
-alias edit='doas nvim'
+alias edit='$ACCESS nvim'
 
 # anekapay projects
 anekapay() {

@@ -1,2 +1,2 @@
 # set brightness hardware
-alias bset="doas brightnessctl -d 'intel_backlight' set"
+alias bset="$ACCESS brightnessctl -d 'intel_backlight' set"

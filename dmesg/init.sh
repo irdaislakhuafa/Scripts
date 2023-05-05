@@ -1,1 +1,1 @@
-alias dmesg='doas dmesg'
+alias dmesg='$ACCESS dmesg'

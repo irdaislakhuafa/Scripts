@@ -1,2 +1,2 @@
 MDBPATH='/var/lib/mongodb'
-alias mongoStart="doas mongod --dbpath $MDBPATH --journal"
+alias mongoStart="$ACCESS mongod --dbpath $MDBPATH --journal"

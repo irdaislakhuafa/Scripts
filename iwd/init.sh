@@ -8,5 +8,5 @@ alias wconnect-h='iwctl station $getDevice connect-hidden'
 alias wshow='iwctl station $getDevice show'
 alias rwd='rsm restart iwd'
 alias wdisconnect='iwctl station $getDevice disconnect'
-alias won="doas wifi on"
-alias wof="doas wifi off"
+alias won="$ACCESS wifi on"
+alias wof="$ACCESS wifi off"
