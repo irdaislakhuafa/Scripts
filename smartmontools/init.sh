@@ -1,1 +1,1 @@
-alias nvme-health="$ACCESS smartctl -A /dev/nvme0n1"
+alias nvme-health="doas smartctl -A /dev/nvme0n1"

@@ -1,6 +1,6 @@
 alias efunctions='edit /lib/rc/functions'
-alias rsm='$ACCESS rsm'
-alias sv='$ACCESS sv'
+alias rsm='doas rsm'
+alias sv='doas sv'
 alias status='rsm status'
 alias restart='rsm restart'
 alias dis='rsm disable'
@@ -20,8 +20,8 @@ fi
 alias bios='BIOS'
 
 # control power
-alias off='$ACCESS poweroff'
+alias off='doas poweroff'
 alias offf='off -f'
-alias boot='$ACCESS reboot'
-alias suspend='$ACCESS loginctl suspend'
+alias boot='doas reboot'
+alias suspend='doas loginctl suspend'
 

@@ -1,3 +1,3 @@
 # control swap memory
-alias swapon='$ACCESS swapon'
-alias swapoff='$ACCESS swapoff'
+alias swapon='doas swapon'
+alias swapoff='doas swapoff'

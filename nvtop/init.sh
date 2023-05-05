@@ -1,3 +1,3 @@
 # see VGA load status
-alias intel='$ACCESS intel_gpu_top'
-alias nvidia='$ACCESS nvtop'
+alias intel='doas intel_gpu_top'
+alias nvidia='doas nvtop'
