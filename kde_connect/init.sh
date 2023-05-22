@@ -1,4 +1,4 @@
-alias kcli="kdeconnect-cli"
+alias kcli="dbus-launch kdeconnect-cli"
 
 kclid() {
     deviceID="$(kcli -l | fzf | cut -d ':' -f 2 | awk '{print $1}' )"

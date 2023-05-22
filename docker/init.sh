@@ -65,7 +65,15 @@ alias dostartop='dopsax docker container start'
 alias dormop='dopsax docker container rm'
 
 docker_image_select() {
-	selected="$(docker images | fzf -m 1000)"
+	images="$(docker images | fzf -m 1000)"
+
+	selected=""
+	for i in $images; do 
+		name="$(echo $i | awk '{print$1}')"
+		tag="$(echo $i | awk '{print$2}')"
+		selected="$selected \n $name:$tag"
+	done
 	echo $selected
 }
 
+alias dpsop='docker push $(docker_image_select)'
