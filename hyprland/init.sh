@@ -9,7 +9,7 @@ export __GLX_VENDOR_LIBRARY_NAME=nvidia
 export __GL_VRR_ALLOWED=0
 
 # use nvidia for wayland session
-export IS_NVIDIA=false
+export IS_NVIDIA=true
 export ENABLE_HYPRLAND=true
 if [ "$DISPLAY" = "" ] && [ "$(ps -a | grep Hyprland)" = "" ] && [ "$ENABLE_HYPRLAND" = "true" ]; then
 	if [ "$IS_NVIDIA" = "true" ]; then

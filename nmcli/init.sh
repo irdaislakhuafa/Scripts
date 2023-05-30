@@ -3,6 +3,7 @@ alias nmcli_dev_wifi_list='nmcli dev wifi list'
 alias nmcli_dev_wifi_rescan='nmcli dev wifi rescan'
 
 nmcli_get_ssid() {
+	nmcli_dev_wifi_rescan
 	ssid="$(nmcli_dev_wifi_list | fzf)"
 	echo "$ssid"
 }
