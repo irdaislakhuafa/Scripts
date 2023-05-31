@@ -175,3 +175,8 @@ _flyctl()
 if [ "$funcstack[1]" = "_flyctl" ]; then
 	_flyctl
 fi
+
+fly_apps_select() {
+	selected="$(fly apps list | fzf -m | awk '{print $1}')"
+	echo "$selected"
+}

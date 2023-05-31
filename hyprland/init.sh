@@ -8,8 +8,6 @@ export __GLX_VENDOR_LIBRARY_NAME=nvidia
 # Controls if Adaptive Sync should be used. Recommended to set as “0” to avoid having problems on some
 export __GL_VRR_ALLOWED=0
 
-export __NV_PRIME_RENDER_OFFLOAD=0 
-
 # use nvidia for wayland session
 export IS_NVIDIA=false
 export ENABLE_HYPRLAND=true
