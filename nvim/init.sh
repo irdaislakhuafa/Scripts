@@ -5,7 +5,7 @@ FZF_DEFAULT_OPTS_NVIM='--preview "bat --style=numbers --color=always --line-rang
 
 # edit pacman config
 alias epac='edit /etc/pacman.conf'
-#alias nvim='FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS_NVIM nvim'
+alias nvim='nvim -c "set buftype="'
 
 # set default editor
 export VISUAL=nvim;
