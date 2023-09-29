@@ -77,3 +77,6 @@ docker_image_select() {
 }
 
 alias dpsop='docker push $(docker_image_select)'
+dormiop() {
+	dormi $(doi | fzf -m | awk '{print $3}')
+}
