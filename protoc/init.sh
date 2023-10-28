@@ -4,7 +4,7 @@ goprocom() {
 		--proto_path="$protodir" \
 		--go_out="$protodir" \
 		--go-grpc_out="$protodir" \
-		"$protodir/*.proto"
+		"$protodir"/*.proto
 }
 
 # procto compile
