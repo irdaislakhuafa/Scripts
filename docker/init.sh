@@ -25,12 +25,12 @@ alias dorunitf='dorunit -v "$(pwd):/files"'
 alias dorunitdf='dorunitd -v "$(pwd):/files"'
 
 dopslect() {
-	selected="$(docker ps |  fzf  -m 1000 | awk '{print $1}')"
+	selected="$(docker ps |  fzf  -m | awk '{print $1}')"
 	echo $selected
 }
 
 dopsalect() {
-	selected="$(docker ps -a |  fzf  -m 1000 | awk '{print $1}')"
+	selected="$(docker ps -a |  fzf  -m | awk '{print $1}')"
 	echo $selected
 }
 
@@ -65,7 +65,7 @@ alias dostartop='dopsax docker container start'
 alias dormop='dopsax docker container rm'
 
 docker_image_select() {
-	images="$(docker images | fzf -m 1000)"
+	images="$(docker images | fzf -m)"
 
 	selected=""
 	for i in $images; do 
